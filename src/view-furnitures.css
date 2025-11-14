@@ -1,0 +1,126 @@
+/* Section container */
+.furniture-container {
+  background-color: #dce4f2;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* Horizontal scroll */
+.furniture-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.furniture-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.furniture-grid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.furniture-grid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Furniture card */
+.furniture-card {
+  background-color: #fff;
+  width: 250px;
+  height: 340px;
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex-shrink: 0;
+}
+
+.furniture-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.furniture-card h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 15px;
+  color: #000;
+}
+
+.details {
+  font-style: italic;
+  color: #444;
+  font-size: 13px;
+}
+
+.furniture-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown styling */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  font-weight: bold;
+}
+
+/* Search Bar */
+.view-furniture-page .search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 2px solid #485168;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 330px;
+  margin-bottom: 20px;
+}
+
+.view-furniture-page .search-container input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  flex: 1;
+  font-size: 15px;
+  color: #485168;
+  background: transparent;
+}
+
+.view-furniture-page .search-container button {
+  background: none;
+  border: none;
+  color: #1e3a8a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* No results text */
+.no-results {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  width: 100%;
+  padding: 166px;
+  font-size: 15px;
+}

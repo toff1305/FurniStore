@@ -1,0 +1,332 @@
+:root {
+  --brown-dark: #3b231f;
+  --cream: #  black;
+  --muted: #e0d7d3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Barlow", system-ui, Segoe UI, Helvetica, Arial;
+  color: var(--cream);
+  background-color: var(--brown-dark);
+}
+
+/* About Hero Section */
+.about-full {
+  position: relative;
+  height: 100vh;
+  background-image: url('./assets/about-us-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(59, 35, 31, 0.6);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  color: #ffffff;
+}
+
+.brand-pill {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--brown-dark);
+  border-radius: 25px;
+  padding: 8px 14px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  margin: 20px 0 16px;
+  color: #ffffff;
+}
+
+.hero-sub {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+/* Behind N&N Section */
+.behind-section {
+  background-color: #dfdac4;
+  color: var(--brown-dark);
+  text-align: center;
+  padding: 80px 50px;
+  min-height: 100vh;
+}
+
+.behind-title {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  margin-bottom: 70px;
+  letter-spacing: 2px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.team-member {
+  position: relative;
+  width: 280px;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 14px;
+  background: white;
+}
+
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.member-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(59, 35, 31, 0.8);
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.4s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.05);
+}
+
+.team-member:hover .member-info p {
+  opacity: 1;
+}
+
+.member-info h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.member-info p {
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--brown-dark);
+  min-height: 100vh;
+  padding: 20px;
+  gap: 40px;
+}
+
+.mv-image img {
+  height: calc(100vh - 40px);
+  width: 300px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.mv-text {
+  flex: 1;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.mv-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.mv-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.mv-content p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+
+/* Mission & Vision Section */
+.mission-vision {
+  display: flex;
+  align-items: stretch; /* stretch image and text to full height */
+  background-color: white;
+  color: var(--brown-dark);
+  min-height: 100vh;
+  padding: 20px;
+  gap: 40px;
+}
+
+/* Left-side image container */
+.mv-image {
+  flex: 0 0 30%; /* take 50% of the section width */
+  padding: 20px;
+  display: flex;
+}
+
+.mv-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Text container on the right */
+.mv-text {
+  flex: 1; /* remaining space */
+  max-width: 600px;
+  text-align: justify;
+  padding: 20px 0;
+}
+
+.mv-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.mv-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.mv-content p {
+  font-size: 17px;
+  line-height: 1.8;
+}.why-choose-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dfdac4;
+  color: var(--brown-dark);
+  padding: 80px 60px; /* space from top & sides */
+  gap: 40px;
+  text-align: left;
+  flex-wrap: wrap;
+  /* Remove min-height: 100vh; */
+}
+
+
+/* Left-side text container */
+.wc-text {
+  flex: 1;                        /* take remaining width */
+  max-width: 600px;
+}
+
+/* Text headers and paragraphs */
+.wc-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.wc-content p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Right-side image container */
+.wc-image {
+  flex: 0 0 50%;                  /* image takes 50% of section width */
+  display: flex;
+  justify-content: flex-end;       /* keep image aligned to right */
+  padding-left: 20px;              /* small space from text */
+}
+
+.wc-image img {
+  width: 100%;
+  max-width: 500px;                /* limit image size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Our Promise Section */
+.our-promise {
+  background-color: white;
+  color: var(--brown-dark);
+  text-align: center;padding: 110px 40px;    /* increase top/bottom and side padding */
+  
+}
+
+.our-promise h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.our-promise p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.promise-images {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.promise-images img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top-left-radius: 50%;   /* top-left corner */
+  border-top-right-radius: 50%;  /* top-right corner */
+  border-bottom-left-radius: 0;  /* bottom-left corner */
+  border-bottom-right-radius: 0; /* bottom-right corner */
+}
+

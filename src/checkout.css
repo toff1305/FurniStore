@@ -1,0 +1,195 @@
+/* checkout.css */
+
+/* UNIVERSAL */
+.co-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* PAGE */
+.co-page {
+  background-color: #FAF5E9;
+  padding: 20px;
+  color: #3E2A1C;
+}
+
+/* HEADER */
+.co-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.co-title {
+  font-size: 30px; /* increased from 20px */
+  font-weight: 700;
+}
+
+.co-back-btn {
+  background-color: #3E2A1C;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px; /* increased from 18px */
+}
+
+/* MAIN CONTAINER */
+.co-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* SECTION BOXES */
+.co-section-box {
+  background-color: #F1E4C6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.co-section-header {
+  background-color: #C1915A;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 12px;
+  font-size: 30px; /* added: assumed default 14px +5 */
+}   
+
+/* ORDER ITEM */
+.co-order-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.co-order-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.co-order-details h3 {
+  font-size: 20px; /* increased from 15px */
+  font-weight: 600;
+}
+
+.co-order-details p {
+  color: #5B4636;
+  font-size: 25px; /* increased from 14px */
+}
+
+/* QUANTITY */
+.co-quantity {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between buttons and quantity */
+}
+
+.co-quantity button {
+  border: 1px solid #3E2A1C;
+  background-color: transparent;
+  width: 40px;       /* increased from 25px */
+  height: 40px;      /* increased from 25px */
+  font-size: 32px;   /* increased from 30px for better proportion */
+  border-radius: 6px; /* optional: slightly rounded */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PAYMENT OPTIONS */
+.co-payment-options {
+  padding: 15px;
+  font-size:27px; /* increased from 14px */
+}
+
+.co-payment-options label {
+  margin-left: 10px;
+}
+
+/* ORDER SUMMARY */
+.co-summary {
+  display: flex;
+  background-color: #F1E4C6;
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.co-summary-left {
+  width: 90%;
+}
+
+.co-summary-content {
+  padding: 15px;
+}
+
+.co-summary-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.co-summary-image {
+  width: 80px;
+  height: 80px;
+}
+
+.co-item-details h3 {
+  font-size: 20px; /* increased from 15px */
+  font-weight: 600;
+}
+
+.co-delivery-info,
+.co-payment-info {
+  margin-top: 10px;
+  font-size: 19px; /* increased from 14px */
+}
+
+/* AMOUNT PAYABLE */
+.co-amount-payable {
+  margin-top: 10px;
+  background-color: #E5D3AF;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CONFIRM BUTTON */
+.co-confirm-btn {
+  width: 100%;
+  background-color: #3E2A1C;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 19px; /* added: increase if needed */
+}/* SUMMARY RIGHT IMAGE */
+
+.co-summary-right {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start; /* align image to the left inside container */
+  max-height: 420px; /* bawasan ang taas ng section */
+  overflow: hidden; /* para hindi lumabas ang sobra */
+}
+
+.co-summary-bg {
+  width: 100%;
+  height: 100%; /* gamitin ang height ng container */
+  object-fit: cover;
+  transform: translateX(0px); /* move image 0px left */
+}

@@ -1,0 +1,195 @@
+/* Page Container */
+.pd-page {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4e8c1;
+  color: #4a2c2a;
+  padding-bottom: 120px; /* more space at bottom */
+}
+
+/* Back Button */
+.pd-back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background-color: #1b1b1b;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Main Container */
+.pd-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 150px;
+  padding: 30px;
+  max-width: 1200px;
+  flex-wrap: wrap; /* responsive wrap */
+}
+
+/* Image Section */
+.pd-image-section {
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #4a2c2a;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.pd-carousel {
+  position: relative;
+  display: inline-block;
+}
+
+.pd-carousel-image {
+  width: 100%;
+  max-width: 500px; /* larger image */
+  height: auto;
+  border-radius: 15px;
+}
+
+/* ===== Arrows inside the image ===== */
+.pd-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  border: none;
+  font-size: 30px; /* bigger arrows */
+  color: #fff;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.pd-carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* arrows placed just inside image edges */
+.pd-prev { 
+  left: 15px; 
+}
+
+.pd-next { 
+  right: 15px; 
+}
+
+.pd-carousel-dots {
+  margin-top: 15px;
+}
+
+.pd-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #4d5638;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 6px;
+  opacity: 0.4;
+}
+
+.pd-dot.active {
+  opacity: 1;
+}
+
+/* Details Section */
+.pd-details-section {
+  flex: 1;
+}
+
+.pd-details-section h2 {
+  margin-top: 0;
+  color: #4a2c2a;
+  font-size: 32px;
+}
+
+.pd-price {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.pd-desc,
+.pd-dimensions {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.uc-header {
+  background-color: transparent;
+  color: #1b1b1b;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+/* Buttons Section */
+.pd-buttons-section {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+/* ADD TO CART Button */
+.pd-addcart-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #7a4a2c;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* CHECK OUT Button */
+.pd-checkout-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #4a2c2a;
+  color: white;
+  font-weight: bold;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+}
+
+.pd-checkout-btn:hover,
+.pd-checkout-btn:visited,
+.pd-checkout-btn:active {
+  text-decoration: none;
+  color: white;
+}
+  

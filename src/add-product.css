@@ -1,0 +1,121 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ADD FURNITURE FORM */
+.add-furniture-container {
+  background-color: #dce4f2;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.section-title {
+  background-color: #485168;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.form-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* Unified Input Styles */
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-field:focus {
+  border-color: #485168;
+  box-shadow: 0 0 5px rgba(72, 81, 104, 0.3);
+}
+
+textarea.input-field {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.price-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTON */
+.add-btn {
+  background-color: #08112b;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #0b1a3a;
+}
+
+.manage-furnitures-page .input-field,
+.manage-furnitures-page input,
+.manage-furnitures-page select,
+.manage-furnitures-page textarea {
+  background-color: #ffffff !important;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.input-field:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #485168;
+  box-shadow: 0 0 5px rgba(72, 81, 104, 0.3);
+}
+.back-btn {
+  background-color: transparent;
+  border: none;
+  color: #08112b;
+  font-weight: 600;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  font-variant: small-caps ;
+}
+
+.back-btn:hover {
+  text-decoration: underline; /* optional hover effect */
+}

@@ -1,0 +1,267 @@
+/* MAIN LAYOUT */
+.admin-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f4fa;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background-color: #02193c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #e5d8a0;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+/* SIDEBAR */
+.sidebar {
+  width: 270px;
+  background-color: #08112b;
+  color: white;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #e8dcaa;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.logo-section h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.logo-section p {
+  font-size: 12px;
+  color: #d6d6d6;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  background-color: white;
+  color: #08112b;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 15px 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar 
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-container input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+  width: 220px;
+}
+
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #02193c;
+  border-radius: 50%;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+}
+
+
+.sort-dropdown div {
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sort-dropdown div:hover {
+  background-color: #515da1;
+}
+
+.order-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #dce4f2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead th{
+  background: #485168;
+  color: white;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #bfcde0;
+}
+
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+.users-container .search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* white background */
+  border: 2px solid #485168;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 320px;
+}
+
+
+.users-container  .search-container input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  flex: 1;
+  font-size: 15px;
+  color:  #485168;
+  background: transparent;
+}
+.users-container .search-container button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.print-btn-mu {
+  background-color: #485168;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.print-btn-mu:hover {
+  background-color: #2f3952;
+}
+
+.print-section-mu{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+/* PRINT TOOLBAR (one line layout) */
+.print-toolbar-mu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* moves to the right side */
+  gap: 12px; /* spacing between elements */
+  margin-top: 20px;
+}
+
+.print-controls-mu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.print-controls-mu select {
+  padding: 6px 10px;
+  border: 1px solid #485168;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #485168;
+  cursor: pointer;
+}
+
+.print-controls-mu select:focus {
+  outline: none;
+  border-color: #2f3952;
+}

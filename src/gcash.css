@@ -1,0 +1,170 @@
+/* ===== HEADER ===== */
+.gc-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 25px; /* ⬅ gives space from top and left */
+  background-color: #000a84;
+  color: white;
+  z-index: 100;
+}
+
+/* Back button */
+.gc-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #0056d2;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.gc-back-btn:hover {
+  background-color: #0040a8;
+}
+
+.gc-back-btn i {
+  font-size: 1.2rem;
+}
+
+.gc-header-title {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gc-header-title h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ===== PAGE LAYOUT ===== */
+.gc-main-container {
+  background-color: #000a84;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px; /* more space from header */
+  box-sizing: border-box;
+}
+
+
+/* ===== PAGE LAYOUT ===== */
+.gc-main-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.gc-main-container {
+  background-color: #000a84;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px; /* add space for header */
+}
+
+/* ===== PAYMENT BOX ===== */
+.gc-payment-box {
+  background-color: #000a84;
+  width: 420px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* White logo section */
+.gc-logo-section {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.gc-gcash-logo {
+  width: 70px;
+}
+
+/* Blue form section */
+.gc-form-section {
+  background-color: #0000a8;
+  color: white;
+  text-align: center;
+  padding: 30px 40px;
+}
+
+.gc-form-section h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.gc-form-section p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.gc-payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.gc-payment-form label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.gc-payment-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
+
+/* Submit button */
+.gc-submit-btn {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.gc-submit-btn:hover {
+  background-color: #0066cc;
+}
+
+/* Terms section */
+.gc-terms {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.gc-terms a {
+  color: #a6d4ff;
+  text-decoration: none;
+}
+
+.gc-terms a:hover {
+  text-decoration: underline;
+}

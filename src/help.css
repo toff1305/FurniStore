@@ -1,0 +1,261 @@
+/* ===== Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* ===== Global Styles ===== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url("./assets/promise3.jfif") no-repeat center;
+    background-size: cover;
+    color: #2a1003;
+}
+
+/* Ensure the page takes the full viewport height */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== Main Help Container ===== */
+.help-container {
+    flex: 1; /* makes it expand to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px 60px;
+    background: rgba(255, 248, 240, 0.9); /* subtle overlay for readability */
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    min-height: calc(100vh - 120px); /* ensures it fills the screen below header/footer */
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+/* ===== Header Section ===== */
+.help-container header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.help-container header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #3E2C23;
+}
+
+.help-container header p {
+    font-size: 1.1rem;
+    color: #5A4232;
+}
+
+/* ===== Accordion ===== */
+.accordion {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.4s ease;
+}
+
+/* ===== Accordion Items ===== */
+.accordion-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    flex: 0 0 350px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.accordion-item.focused {
+    flex: 1 1 100%;
+}
+
+.accordion-item.hidden {
+    display: none;
+}
+
+/* ===== Accordion Header ===== */
+.accordion-header {
+    background-color: #3E2C23;
+    color: #FFF8F0;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #5A4232;
+}
+
+.accordion-header i {
+    font-size: 1.5rem;
+}
+
+/* ===== Accordion Content ===== */
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #FFF8F0;
+    color: #3E2C23;
+    line-height: 1.6;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-item.focused .accordion-content {
+    padding: 20px;
+    max-height: 2000px;
+}
+
+/* ===== Notes and Tips ===== */
+.tip {
+    background-color: #FFEBCF;
+    padding: 10px 15px;
+    border-left: 4px solid #A97C50;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.note {
+    background-color: #F5F1EE;
+    padding: 10px 15px;
+    border-left: 4px solid #3E2C23;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+/* ===== Popup ===== */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background: rgba(62, 44, 35, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+    z-index: 100;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background-color: #FFF8F0;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-content h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #3E2C23;
+}
+
+.popup-btn {
+    background-color: #A97C50;
+    color: #FFF8F0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.popup-btn:hover {
+    background-color: #3E2C23;
+}
+
+/* ===== Help Floating Button ===== */
+.help-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #A97C50;
+    color: #FFF8F0;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    z-index: 200;
+}
+
+.help-btn:hover {
+    background-color: #a75d39;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .accordion {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .accordion-item {
+        flex: 1 1 auto;
+    }
+
+    .help-container {
+        padding: 60px 15px;
+        min-height: calc(100vh - 100px);
+    }
+
+    .help-container header h1 {
+        font-size: 2.2rem;
+    }
+}

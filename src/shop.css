@@ -1,0 +1,236 @@
+.shop-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.shop-page {
+  background-color: #fff;
+  color: #2b2b2b;
+}
+
+/* HEADER */
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.shop-welcome span {
+  font-weight: 600;
+}
+
+.shop-nav-icons .shop-icon {
+  font-size: 22px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* HERO */
+.shop-hero img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.shop-hero-controls {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.shop-dot {
+  height: 12px;
+  width: 12px;
+  background-color: #4b4b3a;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  opacity: 0.5;
+}
+
+.shop-dot.shop-active {
+  opacity: 1;
+}
+
+/* CATEGORY */
+.shop-category {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.shop-category h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.shop-category p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.shop-category-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.shop-card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.shop-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.shop-card h3 {
+  background-color: #4b2e19;
+  color: #fff;
+  padding: 10px;
+}
+
+/* LIVING ROOM AREA */
+.shop-living-room-area {
+  background: url("./assets/Livingroom_area.png") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 150px 20px;
+  position: relative;
+}
+
+.shop-living-room-area .shop-overlay {
+  padding: 80px 20px;
+}
+
+.shop-living-room-area p {
+  margin-top: 220px;
+  font-size: 16px;
+}
+
+/* PRODUCT DISPLAY */
+.shop-product-display {
+  padding: 60px 50px;
+}
+
+.shop-product-row {
+  margin-bottom: 60px;
+}
+
+.shop-product-row h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.shop-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.shop-item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 280px;
+}
+
+.shop-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.shop-item button {
+  background-color: #c5bda6;
+  border: none;
+  color: #4b2e19;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.shop-item p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* BED ROOM AREA */
+.shop-bed-room-area {
+  background: url("./assets/bedroom_area.png") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 150px 20px;
+  position: relative;
+}
+
+.shop-bed-room-area .shop-overlay {
+  padding: 80px 20px;
+}
+
+.shop-bed-room-area p {
+  margin-top: 220px;
+  font-size: 16px;
+}
+
+.shop-product-display2 {
+  padding: 60px 50px;
+}
+
+.shop-product-row2 {
+  margin-bottom: 60px;
+}
+
+.shop-product-row2 h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* DINING ROOM AREA */
+.shop-dining-room-area {
+  background: url("./assets/diningroom_area.png") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 150px 20px;
+  position: relative;
+}
+
+.shop-dining-room-area .shop-overlay {
+  padding: 80px 20px;
+}
+
+.shop-dining-room-area p {
+  margin-top: 220px;
+  font-size: 16px;
+}
+
+.shop-product-display3 {
+  padding: 60px 50px;
+}
+
+.shop-product-row3 {
+  margin-bottom: 60px;
+}
+
+.shop-product-row3 h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
